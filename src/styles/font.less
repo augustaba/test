@@ -1,0 +1,10 @@
+@fonts : 12,13,14,15,16,18,20,24,26,30,36,40;
+.ft {
+  each(@fonts, {
+          &@{value} {
+              font-size: @value * 1px;
+          }
+      }
+
+  )
+}

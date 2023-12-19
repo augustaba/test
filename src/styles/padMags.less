@@ -1,0 +1,103 @@
+@padmags : 0,1,2,3,4,5,6,8,10,12,14,15,16,18,20,24,25,28,30,40,50;
+// margin
+.m {
+  each(@padmags, {
+          &@{value} {
+              margin: @value * 1px;
+          }
+      }
+
+  )
+}
+
+.ml {
+  each(@padmags, {
+          &@{value} {
+              margin-left: @value * 1px;
+          }
+      }
+
+  )
+}
+
+.mr {
+
+  each(@padmags, {
+          &@{value} {
+              margin-right: @value * 1px;
+          }
+      }
+
+  )
+}
+
+.mt {
+  each(@padmags, {
+          &@{value} {
+              margin-top: @value * 1px;
+          }
+      }
+
+  )
+}
+
+.mb {
+  each(@padmags, {
+          &@{value} {
+              margin-bottom: @value * 1px;
+          }
+      }
+
+  )
+}
+
+// padding
+.p {
+  each(@padmags, {
+          &@{value} {
+              padding: @value * 1px;
+          }
+      }
+
+  )
+}
+
+.pl {
+  each(@padmags, {
+          &@{value} {
+              padding-left: @value * 1px;
+          }
+      }
+
+  )
+}
+
+.pr {
+  each(@padmags, {
+          &@{value} {
+              padding-right: @value * 1px;
+          }
+      }
+
+  )
+}
+
+.pt {
+  each(@padmags, {
+          &@{value} {
+              padding-top: @value * 1px;
+          }
+      }
+
+  )
+}
+
+.pb {
+  each(@padmags, {
+          &@{value} {
+              padding-bottom: @value * 1px;
+          }
+      }
+
+  )
+}

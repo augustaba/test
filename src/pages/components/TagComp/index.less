@@ -1,0 +1,26 @@
+.tag {
+  color: #333;
+  font-size: 14px;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  position: relative;
+  cursor: pointer;
+  .tagLabel {
+    position: relative;
+    z-index: 2;
+  }
+  &.checked {
+    color: #3089dc;
+    &::after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      left: -12px;
+      right: -12px;
+      background: #E4F0FD;
+      border-radius: 4px;
+      z-index: 1;
+    }
+  }
+}
